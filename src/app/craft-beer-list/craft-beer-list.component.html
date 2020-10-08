@@ -25,6 +25,7 @@
             <td>{{craftBeer.abv}}</td>
             <td>{{craftBeer.ibu}}</td>
             <td><button (click)="deleteCraftBeer(craftBeer.id)" class="btn btn-danger">Delete</button>
+                <button (click)="craftBeerEdit(craftBeer.id)" class="btn btn-info" style="margin-left: 10px">Edit</button>
                 <button (click)="craftBeerDetails(craftBeer.id)" class="btn btn-info" style="margin-left: 10px">Details</button>
             </td>
           </tr>

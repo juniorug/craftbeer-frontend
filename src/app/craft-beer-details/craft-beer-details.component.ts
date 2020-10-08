@@ -33,6 +33,6 @@ export class CraftBeerDetailsComponent implements OnInit {
   }
 
   list(){
-    this.router.navigate(['craftBeers']);
+    this.router.navigate(['craft-beers']);
   }
 }

@@ -7,7 +7,7 @@ import { CraftBeerListComponent } from './craft-beer-list/craft-beer-list.compon
 import { UpdateCraftBeerComponent } from './update-craft-beer/update-craft-beer.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'craft-beer', pathMatch: 'full' },
+  { path: '', redirectTo: 'craft-beers', pathMatch: 'full' },
   { path: 'craft-beers', component: CraftBeerListComponent },
   { path: 'add', component: CreateCraftBeerComponent },
   { path: 'update/:id', component: UpdateCraftBeerComponent },

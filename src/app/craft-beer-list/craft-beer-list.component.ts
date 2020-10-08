@@ -40,4 +40,7 @@ export class CraftBeerListComponent implements OnInit {
   craftBeerDetails(id: number){
     this.router.navigate(['details', id]);
   }
+  craftBeerEdit(id: number){
+    this.router.navigate(['update', id]);
+  }
 }

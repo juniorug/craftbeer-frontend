@@ -40,6 +40,10 @@ export class CreateCraftBeerComponent implements OnInit {
   }
 
   gotoList() {
-    this.router.navigate(['/craftBeers']);
+    this.router.navigate(['/craft-beers']);
+  }
+
+  list(){
+    this.router.navigate(['craft-beers']);
   }
 }

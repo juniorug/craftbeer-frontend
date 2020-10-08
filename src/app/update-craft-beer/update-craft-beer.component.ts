@@ -12,6 +12,7 @@ export class UpdateCraftBeerComponent implements OnInit {
 
   id: number;
   craftBeer: CraftBeer;
+  submitted = false;
 
   constructor(
     private route: ActivatedRoute,
@@ -21,7 +22,7 @@ export class UpdateCraftBeerComponent implements OnInit {
 
   ngOnInit() {
     this.craftBeer = new CraftBeer();
-
+    this.submitted = false;
     this.id = this.route.snapshot.params['id'];
     
     this.craftBeerService.getCraftBeer(this.id)
@@ -41,10 +42,14 @@ export class UpdateCraftBeerComponent implements OnInit {
   }
 
   onSubmit() {
+    this.submitted = true;
     this.updateCraftBeer();    
   }
 
   gotoList() {
     this.router.navigate(['/craftBeers']);
+  }
+  list(){
+    this.router.navigate(['craft-beers']);
   }
 }
