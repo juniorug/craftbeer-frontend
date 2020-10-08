@@ -1,6 +1,6 @@
 # CraftbeerFrontend
 
-Front-end for the project [craftbeer](https://github.com/juniorug/craftbeer) to register craft beers
+Front-end for the project [craftbeer](https://github.com/juniorug/craftbeer) to register craft beers.
 
 ## Development server
 
